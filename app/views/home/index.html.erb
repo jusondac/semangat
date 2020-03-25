@@ -1,5 +1,6 @@
 <div class="banner-text">
-  <h2>Tolong tetaplah bahagia dan tetaplah baik-baik saja</h2>
+  <h1><div id="time"></div></h1>
+  <h3>Tolong tetaplah bahagia dan tetaplah baik-baik saja</h3>
 </div>
 <div class="animation-area">
   <ul class="box-area">
@@ -11,3 +12,28 @@
     <li></li>
   </ul>
 </div>
+<script>
+  function checkTime(i) {
+      if (i < 10) {
+          i = "0" + i;
+      }
+      return i;
+  }
+
+  function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      var ampm = h >= 12 ? 'pm' : 'am';
+      // add a zero in front of numbers<10
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('time').innerHTML = h + " : " + m + " "+ ampm;
+      t = setTimeout(function () {
+          startTime()
+      }, 500);
+  }
+  startTime();
+
+</script>
