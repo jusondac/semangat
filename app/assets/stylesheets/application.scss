@@ -40,24 +40,31 @@ body {
   font-size: 20px;
 }
 
-.banner-text div {
-  text-align: center;
+.banner-text h3.welcome div{
+  margin-top: 15%;
   color: #fff;
-  font-size: 80px;
-  margin-top: 20%;
+  font-size: 50px;
 }
 
-.banner-text h3 {
+.banner-text h3.text {
   text-align: center;
   color: #fff;
   font-size: 20px;
+  margin-top: 10px;
+}
+
+.banner-text div {
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
 }
 
 .animation-area {
-  background: linear-gradient(to left, #8942a8, #ba382f);
+  background: linear-gradient(to left, #35495e, #347474);
   width: 100%;
   height: 100vh;
 }
+
 .box-area {
   position: absolute;
   top: 0;
