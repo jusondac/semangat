@@ -28,11 +28,11 @@ $(document).ready(function(){
   function word(time) {
     if( time >= 10 && time <= 14 ){
       document.getElementById('word').innerHTML = "Selamat Siang Semua" ;
-    } else if ( time >= 15 && time <= 18 ) {
+    } else if ( time >= 15 && time <= 17 ) {
       document.getElementById('word').innerHTML = "Selamat Sore Semua" ;
-    } else if ( time >= 19 && time <= 24 ) {
+    } else if ( time >= 19 && time <= 23 ) {
       document.getElementById('word').innerHTML = "Selamat Malam Semua" ;
-    } else if ( time >= 1 && time <= 3) {
+    } else if ( time >= 0 && time <= 3) {
       document.getElementById('word').innerHTML = "Masih Malam" ;
     } else if ( time >= 4 && time <= 9) {
       document.getElementById('word').innerHTML = "Selamat Pagi Semua" ;
@@ -55,4 +55,7 @@ $(document).ready(function(){
       }, 500);
   }
   startTime();
-})
+  $('span#covid').click(function(){
+    $(this).fadeOut(3000)
+  });
+});
