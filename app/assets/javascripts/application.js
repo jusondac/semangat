@@ -45,6 +45,9 @@ $(document).ready(function(){
       var m = today.getMinutes();
       var s = today.getSeconds();
       word(h);
+      if ( h < 10){
+        h = '0'+h
+      }
       var ampm = h >= 12 ? ' pm' : ' am';
       // add a zero in front of numbers<10
       m = checkTime(m);
