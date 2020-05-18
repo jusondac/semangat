@@ -1,0 +1,14 @@
+p {
+  margin-top: -40px;
+  margin-top: -30px;
+  font-size: 90px;
+  text-align: center;
+  color: white;
+}
+div#time {
+  margin-top: -35px;
+  font-size: 40px;
+}
+div#word {
+  font-size: 30px
+}

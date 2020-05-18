@@ -27,15 +27,15 @@ $(document).ready(function(){
 
   function word(time) {
     if( time >= 10 && time <= 14 ){
-      document.getElementById('word').innerHTML = "Selamat Siang Semua" ;
+      document.getElementById('word').innerHTML = "Malam" ;
     } else if ( time >= 15 && time <= 17 ) {
-      document.getElementById('word').innerHTML = "Selamat Sore Semua" ;
+      document.getElementById('word').innerHTML = "Sore" ;
     } else if ( time >= 19 && time <= 23 ) {
-      document.getElementById('word').innerHTML = "Selamat Malam Semua" ;
+      document.getElementById('word').innerHTML = "Malam" ;
     } else if ( time >= 0 && time <= 3) {
-      document.getElementById('word').innerHTML = "Masih Malam" ;
+      document.getElementById('word').innerHTML = "Masih Malem ihh" ;
     } else if ( time >= 4 && time <= 9) {
-      document.getElementById('word').innerHTML = "Selamat Pagi Semua" ;
+      document.getElementById('word').innerHTML = "Selamat Pagi" ;
     }
   }
 
